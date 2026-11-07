@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.pooriaarab/agentic-leads",
+  "name": "io.github.itsryanarmani/agentic-leads",
   "description": "Find prospects from places, files, and feeds.",
   "version": "0.2.0",
   "repository": {
