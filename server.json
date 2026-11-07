@@ -4,7 +4,7 @@
   "description": "Find prospects from places, files, and feeds.",
   "version": "0.2.0",
   "repository": {
-    "url": "https://github.com/pooriaarab/agentic-leads.git",
+    "url": "https://github.com/itsryanarmani/agentic-leads.git",
     "source": "github"
   },
   "packages": [
