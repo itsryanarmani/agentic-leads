@@ -141,7 +141,7 @@ export class StormFeedAdapter extends RemoteAdapter {
   async search(q: LeadQuery): Promise<Lead[]> {
     if (!q.area || !/^[a-z]{2}$/i.test(q.area)) throw new VendorError("storm-feed: area needs a two-letter state code");
     const area = q.area.toUpperCase();
-    const payload = object(await this.request(`https://api.weather.gov/alerts/active?area=${area}`, { headers: { "User-Agent": `agentic-leads/${VERSION} (https://github.com/pooriaarab/agentic-leads)`, accept: "application/geo+json" } }));
+    const payload = object(await this.request(`https://api.weather.gov/alerts/active?area=${area}`, { headers: { "User-Agent": `agentic-leads/${VERSION} (https://github.com/itsryanarmani/agentic-leads)`, accept: "application/geo+json" } }));
     return rows(payload.features).slice(0, q.limit).map(f => { const p = object(f.properties); return { name: name(p.event), source: this.name, area, meta: { headline: p.headline, onset: p.onset } }; });
   }
 }
